@@ -34,7 +34,7 @@ async def on_message(message):
     dota = (re.search('.*дота*', message.content) is not None or re.search('.*доту*', message.content) is not None) and re.search('.*удал*', message.content) is None
     deleted = re.search('.*удал*', message.content) is not None
     if dota and is_ew0ke:
-          await message.channel.send("Иди нахуй еблан")
+          await message.channel.send("...")
     if deleted:
           await message.channel.send("Красава стэс")
     await bot.process_commands(message)
